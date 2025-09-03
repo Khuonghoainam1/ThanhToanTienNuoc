@@ -1,0 +1,68 @@
+﻿@model ThanhToanTienNuoc.Models.NguoiDung
+
+<h2>Thêm người dùng</h2>
+
+<!-- Form nhập tay -->
+<form asp-controller="NguoiDung" asp-action="Create" method="post">
+    <div class="form-group">
+        <label>Mã KH</label>
+        <input asp-for="MaKhachHang" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Họ tên</label>
+        <input asp-for="HoTen" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Số điện thoại</label>
+        <input asp-for="SoDienThoai" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Địa chỉ</label>
+        <select asp-for="DiaChiId" class="form-control">
+            @foreach (var diachi in ViewBag.DiaChiList ?? new List<DiaChi>())
+            {
+                <option value="@diachi.DiaChiId">@diachi.TenXom</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Thêm</button>
+</form>
+
+<hr />
+
+<!-- Form upload Excel -->
+<form asp-controller="NguoiDung" asp-action="PreviewExcel" method="post" enctype="multipart/form-data">
+    <label>Import từ Excel</label>
+    <input type="file" name="file" accept=".xlsx" />
+    <button type="submit" class="btn btn-secondary">Xem trước</button>
+</form>
+
+<!-- Hiển thị dữ liệu xem trước -->
+@if (ViewBag.PreviewData != null)
+{
+    <h3>Xem trước dữ liệu</h3>
+    <form asp-action="SaveFromPreview" method="post">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Mã KH</th>
+                    <th>Họ tên</th>
+                    <th>SĐT</th>
+                    <th>Tên xóm</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < ViewBag.PreviewData.Count; i++)
+                {
+                    <tr>
+                        <td><input type="text" name="data[@i].MaKhachHang" value="@ViewBag.PreviewData[i].MaKhachHang" class="form-control" /></td>
+                        <td><input type="text" name="data[@i].HoTen" value="@ViewBag.PreviewData[i].HoTen" class="form-control" /></td>
+                        <td><input type="text" name="data[@i].SoDienThoai" value="@ViewBag.PreviewData[i].SoDienThoai" class="form-control" /></td>
+                        <td><input type="text" name="data[@i].TenXom" value="@ViewBag.PreviewData[i].TenXom" class="form-control" /></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <button type="submit" class="btn btn-success">Lưu vào CSDL</button>
+    </form>
+}

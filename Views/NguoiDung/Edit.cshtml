@@ -1,0 +1,114 @@
+﻿@model ThanhToanTienNuoc.Models.NguoiDung
+@{
+    ViewData["Title"] = "Sửa Thông Tin & Chỉ Số Nước";
+    var chiSo = ViewBag.ChiSoNuoc as ThanhToanTienNuoc.Models.ChiSoNuoc;
+    var diaChiList = ViewBag.DiaChiList as List<ThanhToanTienNuoc.Models.DiaChi>;
+    var donGia = ViewBag.DonGia ?? 7000M; // ví dụ 7000đ/m³
+}
+
+<h2 class="mb-3">Sửa thông tin khách hàng & chỉ số nước</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="MaKhachHang" />
+
+    <!-- THÔNG TIN KHÁCH HÀNG -->
+    <h4>Thông tin khách hàng</h4>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <label asp-for="HoTen" class="form-label"></label>
+            <input asp-for="HoTen" class="form-control" />
+            <span asp-validation-for="HoTen" class="text-danger"></span>
+        </div>
+        <div class="col-md-4">
+            <label asp-for="SoDienThoai" class="form-label"></label>
+            <input asp-for="SoDienThoai" class="form-control" />
+            <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Xóm/Địa chỉ</label>
+            <select asp-for="DiaChiId" class="form-select">
+                <option value="">-- Chọn xóm --</option>
+                @foreach (var x in diaChiList)
+                {
+                    <option value="@x.DiaChiId" selected="@(Model.DiaChiId == x.DiaChiId)">
+                        @x.TenXom
+                    </option>
+                }
+            </select>
+            <span asp-validation-for="DiaChiId" class="text-danger"></span>
+        </div>
+    </div>
+
+    <hr />
+
+    <!-- CHỈ SỐ NƯỚC -->
+    <h4>Chỉ số nước</h4>
+    <div class="row g-3">
+        <div class="col-md-2">
+            <label class="form-label">Năm</label>
+            <input name="ChiSoNuoc.Nam" type="number" class="form-control" value="@chiSo?.Nam" />
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Quý</label>
+            <select name="ChiSoNuoc.Quy" class="form-select">
+                @for (int i = 1; i <= 4; i++)
+                {
+                    <option value="@i" selected="@(chiSo?.Quy == i)">Quý @i</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Chỉ số cũ</label>
+            <input id="chiSoCu" name="ChiSoNuoc.ChiSoCu" type="number" min="0" class="form-control" value="@(chiSo?.ChiSoCu ?? 0)" />
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Chỉ số mới</label>
+            <input id="chiSoMoi" name="ChiSoNuoc.ChiSoMoi" type="number" min="0" class="form-control" value="@(chiSo?.ChiSoMoi ?? 0)" />
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Đơn giá (đ/m³)</label>
+            <input id="donGia" name="donGia" type="number" min="0" class="form-control" value="@donGia" />
+        </div>
+        <div class="col-md-2">
+            <label class="form-label">Số thực dùng (m³)</label>
+            <input id="soThucDung" name="ChiSoNuoc.SoThucDung" type="number" readonly class="form-control" value="@(chiSo?.SoThucDung ?? 0)" />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Thành tiền (đ)</label>
+            <input id="thanhTien" name="ChiSoNuoc.ThanhTien" type="number" readonly class="form-control" value="@(chiSo?.ThanhTien ?? 0)" />
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <button type="submit" class="btn btn-primary">💾 Lưu</button>
+        <a asp-action="Index" class="btn btn-secondary">⬅ Quay lại</a>
+    </div>
+</form>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+    <script>
+        // Hàm tính số thực dùng và thành tiền
+        function recalc() {
+            const cu = parseFloat(document.getElementById('chiSoCu').value) || 0;
+            const moi = parseFloat(document.getElementById('chiSoMoi').value) || 0;
+            const dg = parseFloat(document.getElementById('donGia').value) || 0;
+
+            // Tính số thực dùng (chỉ số mới - chỉ số cũ, không âm)
+            const used = Math.max(moi - cu, 0);
+            document.getElementById('soThucDung').value = used;
+
+            // Tính thành tiền (làm tròn tới đồng)
+            const money = used * dg;
+            document.getElementById('thanhTien').value = Math.round(money);
+        }
+
+        // Gắn sự kiện để tự động tính khi nhập
+        ['chiSoCu', 'chiSoMoi', 'donGia'].forEach(id => {
+            document.getElementById(id).addEventListener('input', recalc);
+        });
+
+        // Tính ngay khi tải trang
+        recalc();
+    </script>
+}

@@ -1,0 +1,66 @@
+﻿@model List<ThanhToanTienNuoc.Models.NguoiDung>
+
+<h2 class="mb-4">Danh sách người dùng</h2>
+
+<form method="get" asp-action="Index" class="row g-2 mb-3 align-items-end">
+    <div class="col-md-3">
+        <input type="text" name="maKhachHang" value="@ViewBag.MaKhachHang"
+               class="form-control" placeholder="Mã khách hàng" />
+    </div>
+    <div class="col-md-3">
+        <input type="text" name="tenKhachHang" value="@ViewBag.TenKhachHang"
+               class="form-control" placeholder="Tên khách hàng" />
+    </div>
+    <div class="col-md-3">
+        <select name="diaChiId" class="form-select">
+            <option value="">-- Chọn xóm --</option>
+            @foreach (var xom in ViewBag.DiaChiList as List<ThanhToanTienNuoc.Models.DiaChi>)
+            {
+                var selected = (ViewBag.DiaChi != null && ViewBag.DiaChi == xom.DiaChiId) ? "selected" : "";
+                <option value="@xom.DiaChiId" >@xom.TenXom</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-3 d-flex gap-2">
+        <button type="submit" class="btn btn-primary flex-fill">Lọc</button>
+        <a asp-action="Index" class="btn btn-secondary flex-fill">Reset</a>
+    </div>
+</form>
+
+<a asp-action="Create" class="btn btn-success mb-3">+ Thêm người dùng</a>
+
+<table class="table table-bordered table-striped align-middle">
+    <thead class="table-light">
+        <tr>
+            <th>Mã KH</th>
+            <th>Họ tên</th>
+            <th>SĐT</th>
+            <th>Địa chỉ</th>
+            <th class="text-center" style="width:150px;">Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var nd in Model)
+            {
+                <tr>
+                    <td>@nd.MaKhachHang</td>
+                    <td>@nd.HoTen</td>
+                    <td>@nd.SoDienThoai</td>
+                    <td>@nd.DiaChi?.TenXom</td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@nd.MaKhachHang" class="btn btn-warning btn-sm me-1">Sửa</a>
+                        <a asp-action="Delete" asp-route-id="@nd.MaKhachHang" class="btn btn-danger btn-sm">Xóa</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5" class="text-center text-muted">Không có dữ liệu</td>
+            </tr>
+        }
+    </tbody>
+</table>
