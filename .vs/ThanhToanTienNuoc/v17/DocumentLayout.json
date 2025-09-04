@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\PROJECT\\ThanhToanTienNuoc\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1CA49925-A1B1-40AD-B518-F9237D1C7C85}|ThanhToanTienNuoc.csproj|d:\\project\\thanhtoantiennuoc\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CA49925-A1B1-40AD-B518-F9237D1C7C85}|ThanhToanTienNuoc.csproj|solutionrelative:models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1CA49925-A1B1-40AD-B518-F9237D1C7C85}|ThanhToanTienNuoc.csproj|d:\\project\\thanhtoantiennuoc\\views\\nguoidung\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1CA49925-A1B1-40AD-B518-F9237D1C7C85}|ThanhToanTienNuoc.csproj|solutionrelative:views\\nguoidung\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1CA49925-A1B1-40AD-B518-F9237D1C7C85}|ThanhToanTienNuoc.csproj|d:\\project\\thanhtoantiennuoc\\models\\nguoidungimport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CA49925-A1B1-40AD-B518-F9237D1C7C85}|ThanhToanTienNuoc.csproj|solutionrelative:models\\nguoidungimport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CA49925-A1B1-40AD-B518-F9237D1C7C85}|ThanhToanTienNuoc.csproj|d:\\project\\thanhtoantiennuoc\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CA49925-A1B1-40AD-B518-F9237D1C7C85}|ThanhToanTienNuoc.csproj|solutionrelative:models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CA49925-A1B1-40AD-B518-F9237D1C7C85}|ThanhToanTienNuoc.csproj|d:\\project\\thanhtoantiennuoc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -88,11 +88,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\PROJECT\\ThanhToanTienNuoc\\Views\\NguoiDung\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\NguoiDung\\Edit.cshtml",
@@ -105,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "NguoiDung.cs",
               "DocumentMoniker": "D:\\PROJECT\\ThanhToanTienNuoc\\Models\\NguoiDung.cs",
               "RelativeDocumentMoniker": "Models\\NguoiDung.cs",
@@ -126,8 +126,7 @@
               "RelativeToolTip": "Models\\AdminAccount.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:41:25.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:41:25.097Z"
             },
             {
               "$type": "Document",
@@ -139,12 +138,11 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:18:35.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:18:35.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "NguoiDungImport.cs",
               "DocumentMoniker": "D:\\PROJECT\\ThanhToanTienNuoc\\Models\\NguoiDungImport.cs",
               "RelativeDocumentMoniker": "Models\\NguoiDungImport.cs",
@@ -152,12 +150,11 @@
               "RelativeToolTip": "Models\\NguoiDungImport.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T16:57:34.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T16:57:34.714Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TimKiem.cshtml",
               "DocumentMoniker": "D:\\PROJECT\\ThanhToanTienNuoc\\Views\\NguoiDung\\TimKiem.cshtml",
               "RelativeDocumentMoniker": "Views\\NguoiDung\\TimKiem.cshtml",
@@ -165,12 +162,11 @@
               "RelativeToolTip": "Views\\NguoiDung\\TimKiem.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-01T06:12:30.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:12:30.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "NguoiDungController.cs",
               "DocumentMoniker": "D:\\PROJECT\\ThanhToanTienNuoc\\Controllers\\NguoiDungController.cs",
               "RelativeDocumentMoniker": "Controllers\\NguoiDungController.cs",
@@ -178,12 +174,11 @@
               "RelativeToolTip": "Controllers\\NguoiDungController.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAAAAwH8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T16:27:39.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T16:27:39.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ChiSoNuoc.cs",
               "DocumentMoniker": "D:\\PROJECT\\ThanhToanTienNuoc\\Models\\ChiSoNuoc.cs",
               "RelativeDocumentMoniker": "Models\\ChiSoNuoc.cs",
@@ -191,12 +186,11 @@
               "RelativeToolTip": "Models\\ChiSoNuoc.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAcwBgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:18:04.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:18:04.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\PROJECT\\ThanhToanTienNuoc\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -204,8 +198,7 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA1wAEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:54:31.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:54:31.288Z"
             },
             {
               "$type": "Document",
@@ -217,8 +210,7 @@
               "RelativeToolTip": "Models\\DiaChi.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T16:40:29.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T16:40:29.734Z"
             },
             {
               "$type": "Document",
@@ -230,8 +222,7 @@
               "RelativeToolTip": "Views\\Account\\ManageWaterUsers.cshtml",
               "ViewState": "AgIAACQAAAAAAAAAAAAjwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-11T16:05:17.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T16:05:17.23Z"
             },
             {
               "$type": "Document",
@@ -243,8 +234,7 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T16:05:16.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T16:05:16.295Z"
             },
             {
               "$type": "Document",
@@ -256,8 +246,7 @@
               "RelativeToolTip": "Views\\NguoiDung\\Index.cshtml",
               "ViewState": "AgIAACwAAAAAAAAAAAAuwEEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-10T16:25:56.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T16:25:56.292Z"
             },
             {
               "$type": "Document",
@@ -269,12 +258,11 @@
               "RelativeToolTip": "Views\\NguoiDung\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-10T16:26:08.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T16:26:08.966Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\PROJECT\\ThanhToanTienNuoc\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -282,8 +270,7 @@
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:18:34.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:18:34.07Z"
             },
             {
               "$type": "Document",
@@ -295,8 +282,7 @@
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-01T06:22:39.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:22:39.348Z"
             },
             {
               "$type": "Document",
@@ -308,8 +294,7 @@
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-01T06:44:26.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:44:26.05Z"
             },
             {
               "$type": "Document",
@@ -321,8 +306,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:12:44.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:12:44.254Z"
             },
             {
               "$type": "Document",

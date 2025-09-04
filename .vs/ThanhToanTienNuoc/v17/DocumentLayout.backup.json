@@ -98,7 +98,7 @@
               "RelativeDocumentMoniker": "Views\\NguoiDung\\Edit.cshtml",
               "ToolTip": "D:\\PROJECT\\ThanhToanTienNuoc\\Views\\NguoiDung\\Edit.cshtml",
               "RelativeToolTip": "Views\\NguoiDung\\Edit.cshtml",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAqwGsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAqwHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-01T06:23:52.723Z",
               "EditorCaption": ""
@@ -113,8 +113,7 @@
               "RelativeToolTip": "Models\\NguoiDung.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T17:01:10.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T17:01:10.297Z"
             },
             {
               "$type": "Document",
@@ -126,8 +125,7 @@
               "RelativeToolTip": "Models\\AdminAccount.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:41:25.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:41:25.097Z"
             },
             {
               "$type": "Document",
@@ -139,8 +137,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:18:35.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:18:35.159Z"
             },
             {
               "$type": "Document",
@@ -152,8 +149,7 @@
               "RelativeToolTip": "Models\\NguoiDungImport.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T16:57:34.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T16:57:34.714Z"
             },
             {
               "$type": "Document",
@@ -165,8 +161,7 @@
               "RelativeToolTip": "Views\\NguoiDung\\TimKiem.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-01T06:12:30.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:12:30.079Z"
             },
             {
               "$type": "Document",
@@ -178,8 +173,7 @@
               "RelativeToolTip": "Controllers\\NguoiDungController.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAAAAwH8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T16:27:39.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T16:27:39.169Z"
             },
             {
               "$type": "Document",
@@ -191,8 +185,7 @@
               "RelativeToolTip": "Models\\ChiSoNuoc.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAcwBgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:18:04.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:18:04.875Z"
             },
             {
               "$type": "Document",
@@ -204,8 +197,7 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA1wAEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:54:31.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:54:31.288Z"
             },
             {
               "$type": "Document",
@@ -217,8 +209,7 @@
               "RelativeToolTip": "Models\\DiaChi.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T16:40:29.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T16:40:29.734Z"
             },
             {
               "$type": "Document",
@@ -230,8 +221,7 @@
               "RelativeToolTip": "Views\\Account\\ManageWaterUsers.cshtml",
               "ViewState": "AgIAACQAAAAAAAAAAAAjwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-11T16:05:17.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T16:05:17.23Z"
             },
             {
               "$type": "Document",
@@ -243,8 +233,7 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T16:05:16.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T16:05:16.295Z"
             },
             {
               "$type": "Document",
@@ -256,8 +245,7 @@
               "RelativeToolTip": "Views\\NguoiDung\\Index.cshtml",
               "ViewState": "AgIAACwAAAAAAAAAAAAuwEEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-10T16:25:56.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T16:25:56.292Z"
             },
             {
               "$type": "Document",
@@ -269,8 +257,7 @@
               "RelativeToolTip": "Views\\NguoiDung\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-10T16:26:08.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T16:26:08.966Z"
             },
             {
               "$type": "Document",
@@ -282,8 +269,7 @@
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:18:34.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:18:34.07Z"
             },
             {
               "$type": "Document",
@@ -295,8 +281,7 @@
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-01T06:22:39.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:22:39.348Z"
             },
             {
               "$type": "Document",
@@ -308,8 +293,7 @@
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-01T06:44:26.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:44:26.05Z"
             },
             {
               "$type": "Document",
@@ -321,8 +305,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T06:12:44.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T06:12:44.254Z"
             },
             {
               "$type": "Document",

@@ -309,3 +309,4 @@ D:\PROJECT\ThanhToanTienNuoc\bin\Debug\net8.0\System.IO.Packaging.dll
 D:\PROJECT\ThanhToanTienNuoc\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\PROJECT\ThanhToanTienNuoc\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 D:\PROJECT\ThanhToanTienNuoc\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\PROJECT\ThanhToanTienNuoc\obj\Debug\net8.0\ThanhToanTienNuoc.sourcelink.json
