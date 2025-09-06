@@ -29,6 +29,6 @@ if (app.Environment.IsDevelopment())
 }
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Account}/{action=Login}/{id?}");
+    pattern: "{controller=NguoiDung}/{action=TimKiem}/{id?}");
 
 app.Run();
