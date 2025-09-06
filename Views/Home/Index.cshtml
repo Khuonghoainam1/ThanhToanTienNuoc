@@ -1,6 +1,81 @@
-﻿@{
-    ViewData["Title"] = "Danh sách khách hàng";
+@{
+    ViewData["Title"] = "Home Page";
 }
 
-<h2>@ViewData["Title"]</h2>
-<p>Người dùng đã được thêm thành công.</p>
+<div class="text-center">
+    <h1 class="display-4">Welcome to WaterService</h1>
+    <p class="lead">Comprehensive water service management system</p>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                <h5 class="card-title">Customer Management</h5>
+                <p class="card-text">Manage customer accounts, view details, and track service history.</p>
+                <a href="@Url.Action("Index", "Customer")" class="btn btn-primary">
+                    <i class="fas fa-arrow-right"></i> Manage Customers
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-tachometer-alt fa-3x text-success mb-3"></i>
+                <h5 class="card-title">Meter Readings</h5>
+                <p class="card-text">Record and track water meter readings for accurate billing.</p>
+                <a href="#" class="btn btn-success disabled">
+                    <i class="fas fa-arrow-right"></i> Coming Soon
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-file-invoice fa-3x text-warning mb-3"></i>
+                <h5 class="card-title">Billing & Invoices</h5>
+                <p class="card-text">Generate invoices, track payments, and manage billing cycles.</p>
+                <a href="#" class="btn btn-warning disabled">
+                    <i class="fas fa-arrow-right"></i> Coming Soon
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-info-circle"></i> System Overview
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Features Available:</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success"></i> Customer Registration & Management</li>
+                            <li><i class="fas fa-check text-success"></i> Search & Filter Customers</li>
+                            <li><i class="fas fa-check text-success"></i> Bulk Operations</li>
+                            <li><i class="fas fa-check text-success"></i> Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Coming Soon:</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-clock text-warning"></i> Meter Reading Management</li>
+                            <li><i class="fas fa-clock text-warning"></i> Automated Billing</li>
+                            <li><i class="fas fa-clock text-warning"></i> Payment Tracking</li>
+                            <li><i class="fas fa-clock text-warning"></i> Reports & Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

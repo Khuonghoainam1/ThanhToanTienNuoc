@@ -1,0 +1,179 @@
+@model WaterService.Models.Customer
+@{
+    ViewData["Title"] = "Delete Customer";
+}
+
+<div class="customer-delete">
+    <div class="page-header mb-4">
+        <h1 class="h3 mb-0 text-danger">
+            <i class="fas fa-exclamation-triangle"></i> Delete Customer
+        </h1>
+        <p class="text-muted">Are you sure you want to delete this customer?</p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h6 class="mb-0">
+                        <i class="fas fa-trash"></i> Confirm Deletion
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-warning" role="alert">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <strong>Warning:</strong> This action cannot be undone. All customer data will be permanently deleted.
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Customer ID</label>
+                                <p class="form-control-plaintext">@Model.CustomerCode</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Status</label>
+                                <p class="form-control-plaintext">
+                                    <span class="badge @(Model.Status == WaterService.Models.CustomerStatus.Active ? "bg-success" : "bg-secondary")">
+                                        @Model.Status
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Customer Name</label>
+                        <p class="form-control-plaintext">@Model.HouseholdHeadName</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Address</label>
+                        <p class="form-control-plaintext">@Model.Address</p>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Phone Number</label>
+                                <p class="form-control-plaintext">@Model.PhoneNumber</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Registration Date</label>
+                                <p class="form-control-plaintext">@Model.RegistrationDate.ToString("MMM dd, yyyy")</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(Model.Notes))
+                    {
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">Notes</label>
+                            <p class="form-control-plaintext">@Model.Notes</p>
+                        </div>
+                    }
+
+                    <form asp-action="Delete" method="post" class="d-flex gap-2">
+                        <input asp-for="Id" type="hidden" />
+                        <button type="submit" class="btn btn-danger" onclick="return confirmDelete()">
+                            <i class="fas fa-trash"></i> Yes, Delete Customer
+                        </button>
+                        <a href="@Url.Action("Details", new { id = Model.Id })" class="btn btn-secondary">
+                            <i class="fas fa-times"></i> Cancel
+                        </a>
+                        <a href="@Url.Action("Index")" class="btn btn-outline-secondary">
+                            <i class="fas fa-list"></i> Back to List
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="mb-0">
+                        <i class="fas fa-info-circle"></i> Deletion Information
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <small class="text-muted">Customer ID</small>
+                        <p class="mb-0"><strong>@Model.CustomerCode</strong></p>
+                    </div>
+                    <div class="mb-3">
+                        <small class="text-muted">Created</small>
+                        <p class="mb-0">@Model.CreatedAt.ToString("MMM dd, yyyy 'at' h:mm tt")</p>
+                    </div>
+                    <div class="mb-3">
+                        <small class="text-muted">Last Updated</small>
+                        <p class="mb-0">@Model.UpdatedAt.ToString("MMM dd, yyyy 'at' h:mm tt")</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h6 class="mb-0">
+                        <i class="fas fa-exclamation-triangle text-warning"></i> What will be deleted?
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <i class="fas fa-check text-danger"></i> Customer profile
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-danger"></i> Contact information
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-danger"></i> Address details
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-danger"></i> Registration data
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-danger"></i> Notes and comments
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h6 class="mb-0">
+                        <i class="fas fa-shield-alt text-info"></i> Safety Check
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info" role="alert">
+                        <small>
+                            <i class="fas fa-info-circle"></i>
+                            <strong>Note:</strong> This customer cannot be deleted if they have existing invoices or meter readings.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function confirmDelete() {
+            const customerName = '@Model.HouseholdHeadName';
+            const customerCode = '@Model.CustomerCode';
+            
+            return confirm(`Are you absolutely sure you want to delete customer ${customerCode} (${customerName})?\n\nThis action cannot be undone and all customer data will be permanently lost.`);
+        }
+
+        $(document).ready(function() {
+            // Add any specific JavaScript for the delete page here
+            console.log('Delete confirmation page loaded for: @Model.CustomerCode');
+        });
+    </script>
+}
